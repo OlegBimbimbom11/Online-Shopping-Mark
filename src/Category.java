@@ -1,9 +1,12 @@
+import java.util.ArrayList;
 public class Category {
     private static int idid = 0;
     private int id;
     private String Title;
     private Double Price;
     private String Description;
+
+    private static ArrayList<String> Show_and_Add_Category = new ArrayList<String>();
 
     public Category () {}
 
@@ -14,6 +17,8 @@ public class Category {
         this.Price = Price;
         this.Description = Description;
     }
+
+
 
     public int get_id() {
         return this.id;
@@ -47,7 +52,15 @@ public class Category {
         this.Description = Description;
     }
 
-
+    public void Add_Category(String NameCat) {
+        Show_and_Add_Category.add(NameCat);
+    }
+    public void Show_Category() {
+        System.out.println("Категории:");
+        for (String item: Show_and_Add_Category) {
+            System.out.println("- " + item);
+        }
+    }
 
 
 

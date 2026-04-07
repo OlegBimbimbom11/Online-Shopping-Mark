@@ -5,6 +5,7 @@ public class Catalog {
     private String Title;
     private Double Price;
 
+
     public Catalog() {}
 
     public Catalog(int id) {
@@ -46,7 +47,7 @@ public class Catalog {
 
 }
 
-// Этап 2
+// TODO - Этап 2
 // 1 шаг. В классе Product должны быть поля id, title, price, description (описание). Product Class должен быть абстрактным
 // 2 шаг создаём новый класс Category, делаем поля id, title, description, список ArayList, он сохраняет в себе список Category
 // 2.1 добавить AddCategory, ShowCategory
@@ -54,3 +55,7 @@ public class Catalog {
 // 4 шаг наследники - Electronic, GargenItem
 // 5 шаг создаём новый класс MobileDivice, он есть наследник Electronic
 // 6 шаг создаём несколько новых объектов из новых классов (в main)
+
+// TODO - Этап 3
+// 1 шаг - создать класс Catalog (есть), add Add_Category, Show_Category
+// 2 ШАГ - добавляем счётчики   в каталог, 1 - сколько есть категорий, 2 - сколько субкатегорий
